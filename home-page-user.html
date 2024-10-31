@@ -40,30 +40,40 @@
       </div>
     </header>
     <main>
-      <h1>My virtual library</h1>
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste modi
-          quod aut magnam? Eum similique nulla ea deleniti? Soluta unde animi
-          voluptates cupiditate consectetur! Ea quibusdam cum excepturi beatae
-          illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-          consequuntur molestias aliquam quaerat maxime perspiciatis doloremque
-          rerum, impedit vel modi dolorum eligendi cum eum cupiditate temporibus
-          veritatis odit ea similique. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Iste modi quod aut magnam? Eum similique nulla ea
-          deleniti? Soluta unde animi voluptates cupiditate consectetur! Ea
-          quibusdam cum excepturi beatae illo! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Earum consequuntur molestias aliquam
-          quaerat maxime perspiciatis doloremque rerum, impedit vel modi dolorum
-          eligendi cum eum cupiditate temporibus veritatis odit ea similique.
-        </p>
+      <h1>Bienvenue, {username}</h1>
+      <section class="lecture-en-cours">
+        <h2>Lectures en cours</h2>
+
+        <div class="cards">
+          <article class="card1">
+            <h3>Titre du livre</h3>
+            <div class="couverture">
+              <img src="asset/images/livre1.jpg" alt="couverture du livre" />
+            </div>
+            <h4>Auteur</h4>
+            <h4>Genre</h4>
+            <h4>Statut</h4>
+            <progress class="progress-bar" value="30" max="100">30 %</progress>
+            <div class="commentaire">
+              <p></p>
+            </div>
+          </article>
+
+          <article class="card2">
+            <h3>Titre du livre</h3>
+            <div class="couverture">
+              <img src="asset/images/livre1.jpg" alt="couverture du livre" />
+            </div>
+            <h4>Auteur</h4>
+            <h4>Genre</h4>
+            <h4>Statut</h4>
+            <progress class="progress-bar" value="30" max="100">30 %</progress>
+            <div class="commentaire">
+              <p></p>
+            </div>
+          </article>
+        </div>
       </section>
-      <div id="buttons">
-        <button class="button" type="button">Se connecter</button>
-        <form action="./inscription.html">
-          <button class="button" type="submit">S'inscrire</button>
-        </form>
-      </div>
     </main>
     <footer>
       <p>Copyright © 2024. Tout droits réservés. Mentions légales</p>
