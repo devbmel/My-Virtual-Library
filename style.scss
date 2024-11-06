@@ -1,3 +1,5 @@
+@import "variables_mixins";
+
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +8,17 @@
 
 body {
   font-family: "Lora";
-  font-size: 2.5vh;
-  background-color: #f6f2ef;
+  font-size: $principal-font-size;
+  background-color: $body-background-color;
 }
 
 header {
-  background-color: #2f3b3b;
+  background-color: $header-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+
   position: relative;
   height: 120px;
   overflow: visible;
@@ -30,35 +33,23 @@ header {
 
 .menu {
   flex-grow: 1;
-}
-.menu ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-.menu li {
-  margin: 0 15px;
-}
-.menu a {
-  text-decoration: none;
-  color: #a27b5c;
-  font-weight: bold;
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  li {
+    margin: 0 15px;
+  }
+  a {
+    text-decoration: none;
+    color: #a27b5c;
+    font-weight: bold;
+  }
 }
 
 .connexion {
-  background-color: #a27b5c;
-  padding: 10px, 15px;
-  color: #f6f2ef;
-  border: solid 1px #392b20;
-  border-radius: 10px;
-  height: 40px;
-  width: 130px;
-  margin: 10px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.connexion:hover {
-  background-color: #81624a;
+  @include button-styles($button-bg-color, (10px, 15px));
 }
 
 main {
@@ -66,46 +57,35 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-main h1 {
-  text-align: center;
-  font-family: "Almendra";
-  font-size: 60px;
-  color: #2f3b3b;
-  margin: 5%;
+
+  h1 {
+    text-align: center;
+    font-family: "Almendra";
+    font-size: 60px;
+    color: #2f3b3b;
+    margin: 5%;
+  }
 }
 
 section {
   display: flex;
   justify-content: center;
-}
-section p {
-  width: 80%;
-  height: auto;
-  border: solid 3px #7a5c45;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  background-color: #e2d6cc;
-  color: #7a5c45;
-  text-align: justify;
-  padding: 20px;
+  p {
+    width: 80%;
+    height: auto;
+    border: solid 3px #7a5c45;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #e2d6cc;
+    color: #7a5c45;
+    text-align: justify;
+    padding: 20px;
+  }
 }
 
 .button {
-  background-color: #a27b5c;
-  padding: 10px, 15px;
-  color: #f6f2ef;
-  border: solid 1px #392b20;
-  border-radius: 10px;
-  height: 40px;
-  width: 130px;
-  margin: 10px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: #81624a;
+  @include button-styles($button-bg-color, (10px, 15px));
 }
 
 #buttons {
@@ -131,6 +111,7 @@ footer {
   margin: 0 auto;
   padding: 20px;
   background-color: #e2d6cc;
+
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -150,10 +131,10 @@ label {
   color: #2f3b3b;
 }
 
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=confirmpassword] {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="confirmpassword"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #e2d6cc;
@@ -161,15 +142,15 @@ input[type=confirmpassword] {
   box-sizing: border-box;
 }
 
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=confirmpassword]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="confirmpassword"]:focus {
   border-color: #2f3b3b;
   outline: none;
 }
 
-.formulaire button[type=submit] {
+.formulaire button[type="submit"] {
   background-color: #a27b5c;
   color: white;
   border: none;
@@ -180,11 +161,12 @@ input[type=confirmpassword]:focus {
   font-size: 16px;
 }
 
-.formulaire button[type=submit]:hover {
+.formulaire button[type="submit"]:hover {
   background-color: #7a5c45;
 }
 
 /* --------------------HOME PAGE USER--------------------------------------- */
+
 .lecture-en-cours {
   display: flex;
   flex-direction: column;
@@ -232,6 +214,7 @@ h2 {
   padding: 20px;
 }
 
+//------------Media Queries-------------//
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -239,9 +222,11 @@ h2 {
     padding-top: 60px;
     height: auto;
   }
+
   .menu {
     margin: 10px 0;
   }
+
   .menu ul {
     flex-direction: column;
     align-items: flex-start;
@@ -249,9 +234,10 @@ h2 {
   .menu li {
     margin: 5px 0;
   }
+
   .logo {
     position: relative;
     max-height: 100px;
     top: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}

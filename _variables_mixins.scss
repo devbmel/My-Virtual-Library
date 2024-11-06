@@ -1,0 +1,22 @@
+//Variables
+
+$principal-font-size: 2.5vh;
+$body-background-color: #f6f2ef;
+$header-color: #2f3b3b;
+$button-bg-color: #a27b5c;
+
+@mixin button-styles($button-bg-color, $padding: 10px) {
+  background-color: $button-bg-color;
+  padding: $padding;
+  color: #f6f2ef;
+  border: solid 1px #392b20;
+  border-radius: 10px;
+  height: 40px;
+  width: 130px;
+  margin: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($button-bg-color, 10%);
+  }
+}
