@@ -84,6 +84,54 @@ section {
   }
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: solid 2px #7a5c45;
+  background-color: #e2d6cc;
+  color: #161b1c;
+  border-radius: 20px;
+  padding: 20px;
+  width: 30%;
+
+  h3 {
+    color: #3f4e4f;
+    font-size: 3vh;
+    text-align: end;
+  }
+
+  h4 {
+    color: #3f4e4f;
+  }
+
+  .couverture {
+    height: 10em;
+    width: 30em;
+
+    img {
+      max-height: 100%;
+      width: auto;
+    }
+  }
+
+  .commentaire {
+    p {
+      border: solid color #7a5c45;
+      background-color: #e2d6cc;
+      color: #161b1c;
+      border-radius: 20px;
+      padding: 20px;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
 .button {
   @include button-styles($button-bg-color, (10px, 15px));
 }
@@ -100,118 +148,6 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-
-/* ---------------------------Style pour le formulaire-----------------------------------*/
-.formulaire {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #e2d6cc;
-
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.formulaire form {
-  width: 100%;
-}
-
-div {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #2f3b3b;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="confirmpassword"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #e2d6cc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="confirmpassword"]:focus {
-  border-color: #2f3b3b;
-  outline: none;
-}
-
-.formulaire button[type="submit"] {
-  background-color: #a27b5c;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  font-size: 16px;
-}
-
-.formulaire button[type="submit"]:hover {
-  background-color: #7a5c45;
-}
-
-/* --------------------HOME PAGE USER--------------------------------------- */
-
-.lecture-en-cours {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-h2 {
-  color: #2f3b3b;
-  font-family: "Almendra";
-  align-items: center;
-  text-align: center;
-}
-
-.couverture {
-  height: 10em;
-  width: 30em;
-}
-
-.couverture > img {
-  max-height: 100%;
-  width: auto;
-}
-
-.commentaire > p {
-  border: solid color #7a5c45;
-  background-color: #e2d6cc;
-  color: #161b1c;
-  border-radius: 20px;
-  padding: 20px;
-  height: 10em;
-  width: 30em;
-}
-
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.card {
-  border: solid color #7a5c45;
-  background-color: #e2d6cc;
-  color: #161b1c;
-  border-radius: 20px;
-  padding: 20px;
 }
 
 //------------Media Queries-------------//

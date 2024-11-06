@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .filter-bar {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+    .search {
+      width: 50%;
+    }
+  }
+}
+
+.ajout-livre {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 30%;
+  height: auto;
+}

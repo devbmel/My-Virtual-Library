@@ -16,8 +16,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="form.css" />
-    <title>Inscription</title>
+
+    <title>Wishlist</title>
   </head>
   <body>
     <header>
@@ -30,41 +30,17 @@
       <nav class="menu">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="">Bibliothèque</a></li>
-          <li><a href="">Wishlist</a></li>
+          <li><a href="library.html">Bibliothèque</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
         </ul>
       </nav>
-      <div><button class="connexion" type="button">Connexion</button></div>
+      <div id="buttons">
+        <form action="./connexion.html">
+          <button class="button" type="submit">Connexion</button>
+        </form>
+      </div>
     </header>
-
-    <h1>Se connecter</h1>
-    <div class="formulaire">
-      <form action="home-page-user.html">
-        <div>
-          <label for="username">Nom d'utilisateur :</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            pattern="[a-zA-ZÀ-ÿ]+"
-            required
-          />
-        </div>
-
-        <div>
-          <label for="password">Mot de passe :</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            pattern="/^(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{8,}$/"
-            required
-          />
-        </div>
-
-        <button type="submit">Envoyer</button>
-      </form>
-    </div>
+    <main></main>
     <footer>
       <p>Copyright © 2024. Tout droits réservés. Mentions légales</p>
     </footer>
