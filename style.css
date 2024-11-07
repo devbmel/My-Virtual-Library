@@ -99,6 +99,21 @@ section p {
   margin-bottom: 20px;
 }
 
+.card-ajout {
+  border: solid 2px #7a5c45;
+  background-color: #e2d6cc;
+  color: #161b1c;
+  border-radius: 20px;
+  padding: 20px;
+  width: 30%;
+}
+.card-ajout h3 {
+  text-align: center;
+}
+.card-ajout p {
+  width: 80%;
+}
+
 .card {
   border: solid 2px #7a5c45;
   background-color: #e2d6cc;
@@ -114,6 +129,17 @@ section p {
 }
 .card h4 {
   color: #3f4e4f;
+}
+.card .icones {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.card .wraph4 {
+  display: flex;
+}
+.card .wraph4 h4 {
+  padding: 15px;
 }
 .card .couverture {
   height: 10em;

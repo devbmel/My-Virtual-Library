@@ -36,35 +36,36 @@
       </nav>
       <div><button class="connexion" type="button">Connexion</button></div>
     </header>
+    <main>
+      <h1>Se connecter</h1>
+      <div class="formulaire">
+        <form action="home-page-user.html">
+          <div>
+            <label for="username">Nom d'utilisateur :</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              pattern="[a-zA-ZÀ-ÿ]+"
+              required
+            />
+          </div>
 
-    <h1>Se connecter</h1>
-    <div class="formulaire">
-      <form action="home-page-user.html">
-        <div>
-          <label for="username">Nom d'utilisateur :</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            pattern="[a-zA-ZÀ-ÿ]+"
-            required
-          />
-        </div>
+          <div>
+            <label for="password">Mot de passe :</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              pattern="/^(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{8,}$/"
+              required
+            />
+          </div>
 
-        <div>
-          <label for="password">Mot de passe :</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            pattern="/^(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{8,}$/"
-            required
-          />
-        </div>
-
-        <button type="submit">Envoyer</button>
-      </form>
-    </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </main>
     <footer>
       <p>Copyright © 2024. Tout droits réservés. Mentions légales</p>
     </footer>
