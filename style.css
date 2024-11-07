@@ -53,7 +53,6 @@ header {
   border-radius: 10px;
   height: 40px;
   width: 130px;
-  margin: 10px;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -66,13 +65,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 70px;
 }
 main h1 {
   text-align: center;
   font-family: "Almendra";
   font-size: 60px;
   color: #2f3b3b;
-  margin: 5%;
+  margin-top: 100px;
 }
 
 section {
@@ -141,7 +141,6 @@ section p {
   border-radius: 10px;
   height: 40px;
   width: 130px;
-  margin: 10px;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -161,6 +160,36 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+}
+
+.favoris {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 15px;
+}
+
+.cardfavoris {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 2px #7a5c45;
+  background-color: #e2d6cc;
+}
+
+.imagefavoris {
+  width: 8em;
+  height: 8em;
+  padding: 10px;
+}
+.imagefavoris img {
+  max-height: 100%;
+  width: auto;
+}
+
+.iconesupp {
+  padding-right: 10px;
 }
 
 @media (max-width: 768px) {

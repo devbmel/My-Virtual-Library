@@ -43,154 +43,88 @@
     </header>
     <main>
       <div class="container">
-    
-        
-        
+        <h1>Ajouter un nouveau livre</h1>
         <section class="filter-bar">
-            <h1>Ajouter un nouveau livre</h1>
-        <div class="filter-options">
+          <div class="filter-options">
             <select id="favorite-filter">
-                <option value="">Filtrer par favoris</option>
-                <option value="oui">Oui</option>
-                <option value="non">Non</option>
+              <option value="">Filtrer par favoris</option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+
+            <select id="genre-filter">
+              <option value="">Filtrer par genre</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="sf">Science fiction</option>
+              <option value="classique">Classiques</option>
             </select>
 
             <select id="rating-filter">
-                <option value="">Filtrer par note</option>
-                <option value="1">1 étoile</option>
-                <option value="2">2 étoiles</option>
-                <option value="3">3 étoiles</option>
-                <option value="4">4 étoiles</option>
-                <option value="5">5 étoiles</option>
+              <option value="">Filtrer par note</option>
+              <option value="1">1 étoile</option>
+              <option value="2">2 étoiles</option>
+              <option value="3">3 étoiles</option>
+              <option value="4">4 étoiles</option>
+              <option value="5">5 étoiles</option>
             </select>
 
             <select id="status-filter">
-                <option value="">Filtrer par statut</option>
-                <option value="actif">Actif</option>
-                <option value="inactif">Inactif</option>
+              <option value="">Filtrer par statut</option>
+              <option value="Lus">Lus</option>
+              <option value="Non Lus">Non lus</option>
+              <option value=""></option>
             </select>
+          </div>
+
+          <input type="text" class="search" placeholder="Rechercher..." />
+        </section>
+
+        <section class="bibliotheque"></section>
+        <div class="card ajout">
+          <h3>Ajouter un livre</h3>
+
+          <p>+</p>
         </div>
+        <article class="card">
+          <h3>Titre du livre</h3>
+          <div class="couverture">
+            <img src="asset/images/livre1.jpg" alt="couverture du livre" />
+          </div>
+          <h4>Auteur</h4>
+          <h4>Genre</h4>
+          <h4>Statut</h4>
+          <progress class="progress-bar" value="30" max="100">30 %</progress>
+          <div class="commentaire">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+              doloribus illo eos adipisci excepturi tempore omnis eius esse
+              neque laboriosam, quo veritatis possimus sit magni consequatur?
+              Quaerat consequatur eaque fuga.
+            </p>
+          </div>
+        </article>
 
-        <input type="text" class="search" placeholder="Rechercher...">
-    </div>
-</section>
-  <section class="ajout-livre"></section>
-          <article class="card">
-            <h3>Titre du livre</h3>
-            <div class="couverture">
-              <img src="asset/images/livre1.jpg" alt="couverture du livre" />
-            </div>
-            <h4>Auteur</h4>
-            <h4>Genre</h4>
-            <h4>Statut</h4>
-            <progress class="progress-bar" value="30" max="100">30 %</progress>
-            <div class="commentaire">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis doloribus illo eos adipisci excepturi tempore omnis
-                eius esse neque laboriosam, quo veritatis possimus sit magni
-                consequatur? Quaerat consequatur eaque fuga.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Titre du livre</h3>
-            <div class="couverture">
-              <img src="asset/images/livre1.jpg" alt="couverture du livre" />
-            </div>
-            <h4>Auteur</h4>
-            <h4>Genre</h4>
-            <h4>Statut</h4>
-            <progress class="progress-bar" value="30" max="100">30 %</progress>
-            <div class="commentaire">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis doloribus illo eos adipisci excepturi tempore omnis
-                eius esse neque laboriosam, quo veritatis possimus sit magni
-                consequatur? Quaerat consequatur eaque fuga.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Titre du livre</h3>
-            <div class="couverture">
-              <img src="asset/images/livre1.jpg" alt="couverture du livre" />
-            </div>
-            <h4>Auteur</h4>
-            <h4>Genre</h4>
-            <h4>Statut</h4>
-            <progress class="progress-bar" value="30" max="100">30 %</progress>
-            <div class="commentaire">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis doloribus illo eos adipisci excepturi tempore omnis
-                eius esse neque laboriosam, quo veritatis possimus sit magni
-                consequatur? Quaerat consequatur eaque fuga.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Titre du livre</h3>
-            <div class="couverture">
-              <img src="asset/images/livre1.jpg" alt="couverture du livre" />
-            </div>
-            <h4>Auteur</h4>
-            <h4>Genre</h4>
-            <h4>Statut</h4>
-            <progress class="progress-bar" value="30" max="100">30 %</progress>
-            <div class="commentaire">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis doloribus illo eos adipisci excepturi tempore omnis
-                eius esse neque laboriosam, quo veritatis possimus sit magni
-                consequatur? Quaerat consequatur eaque fuga.
-              </p>
-            </div>
-          </article>
-          <article class="card">
-            <h3>Titre du livre</h3>
-            <div class="couverture">
-              <img src="asset/images/livre1.jpg" alt="couverture du livre" />
-            </div>
-            <h4>Auteur</h4>
-            <h4>Genre</h4>
-            <h4>Statut</h4>
-            <progress class="progress-bar" value="30" max="100">30 %</progress>
-            <div class="commentaire">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis doloribus illo eos adipisci excepturi tempore omnis
-                eius esse neque laboriosam, quo veritatis possimus sit magni
-                consequatur? Quaerat consequatur eaque fuga.
-              </p>
-            </div>
-          </article>
-          <article class="card">
-            <h3>Titre du livre</h3>
-            <div class="couverture">
-              <img src="asset/images/livre1.jpg" alt="couverture du livre" />
-            </div>
-            <h4>Auteur</h4>
-            <h4>Genre</h4>
-            <h4>Statut</h4>
-            <progress class="progress-bar" value="30" max="100">30 %</progress>
-            <div class="commentaire">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis doloribus illo eos adipisci excepturi tempore omnis
-                eius esse neque laboriosam, quo veritatis possimus sit magni
-                consequatur? Quaerat consequatur eaque fuga.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-      </main>
-</div>
+        <article class="card">
+          <h3>Titre du livre</h3>
+          <div class="couverture">
+            <img src="asset/images/livre1.jpg" alt="couverture du livre" />
+          </div>
+          <h4>Auteur</h4>
+          <h4>Genre</h4>
+          <h4>Statut</h4>
+          <progress class="progress-bar" value="30" max="100">30 %</progress>
+          <div class="commentaire">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+              doloribus illo eos adipisci excepturi tempore omnis eius esse
+              neque laboriosam, quo veritatis possimus sit magni consequatur?
+              Quaerat consequatur eaque fuga.
+            </p>
+          </div>
+        </article>
+      </div>
     </main>
+
     <footer>
       <p>Copyright © 2024. Tout droits réservés. Mentions légales</p>
     </footer>

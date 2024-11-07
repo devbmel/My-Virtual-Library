@@ -2,24 +2,34 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
 
-  .filter-bar {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
+.filter-bar {
+  flex-direction: row;
+  width: 100%;
 
-    .search {
-      width: 50%;
-    }
+  .search {
+    width: 40%;
   }
 }
 
-.ajout-livre {
-  display: flex;
-  flex-direction: column;
+.bibliotheque {
+  background-color: aqua;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.card {
-  width: 30%;
-  height: auto;
+// .bibliotheque {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+//   gap: 20px;
+//   padding: 20px;
+// }
+
+@media (max-width: 600px) {
+  .bibliotheque {
+    grid-template-columns: 1fr;
+  }
 }
