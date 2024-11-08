@@ -92,7 +92,9 @@ section {
   margin-bottom: 20px;
 }
 
-.card-ajout {
+.cardadd {
+  display: flex;
+  flex-direction: column;
   border: solid 2px #7a5c45;
   background-color: #e2d6cc;
   color: #161b1c;
@@ -105,7 +107,14 @@ section {
   }
 
   p {
-    width: 80%;
+    font-size: 16vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #161b1c;
   }
 }
 
@@ -180,39 +189,6 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-
-// --------page wishlist--------------//
-
-.favoris {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  gap: 15px;
-}
-
-.cardfavoris {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border: solid 2px #7a5c45;
-  background-color: #e2d6cc;
-}
-
-.imagefavoris {
-  width: 8em;
-  height: 8em;
-  padding: 10px;
-
-  img {
-    max-height: 100%;
-    width: auto;
-  }
-}
-
-.iconesupp {
-  padding-right: 10px;
 }
 
 //------------Media Queries-------------//

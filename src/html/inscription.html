@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <title>Inscription</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="/asset/images/logo.png"
+        alt="logo de my virtual
+      library, une plume dans un livre"
+      />
+      <nav class="menu">
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="../html/library.html">Bibliothèque</a></li>
+          <li><a href="../html/wishlist.html">Wishlist</a></li>
+        </ul>
+      </nav>
+      <div><button class="connexion" type="button">Connexion</button></div>
+    </header>
+
+    <main>
+      <h1>S'inscrire</h1>
+      <div class="formulaire">
+        <form action="../html/home-page-user.html">
+          <div>
+            <label for="username">Nom d'utilisateur :</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              pattern="[a-zA-ZÀ-ÿ]+"
+              placeholder="Uniquement des caractères alphabétiques"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="something@exemple.com"
+              required
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div>
+            <label for="password">Mot de passe :</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              pattern="/^(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{8,}$/"
+              placeholder="Au moins une majuscule et un caractère spécial"
+              required
+            />
+          </div>
+          <div>
+            <label for="confirmpassword">Confirmer le mot de passe :</label>
+            <input
+              type="confirmpassword"
+              id="confirmpassword"
+              name="confirmpassword"
+            />
+          </div>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright © 2024. Tout droits réservés. Mentions légales</p>
+    </footer>
+  </body>
+</html>

@@ -12,9 +12,10 @@
   padding: 10px;
   background-color: #e2d6cc;
   border: solid 2px;
-}
-.filter-bar .search {
-  width: 30%;
+
+  .search {
+    width: 30%;
+  }
 }
 
 .bibliotheque {
@@ -23,8 +24,12 @@
   gap: 20px;
 }
 
+.note {
+  gap: 10px;
+}
+
 @media (max-width: 600px) {
   .bibliotheque {
     grid-template-columns: 1fr;
   }
-}/*# sourceMappingURL=library.css.map */
+}
