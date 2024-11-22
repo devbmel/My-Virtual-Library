@@ -79,7 +79,7 @@ section {
   display: flex;
   justify-content: center;
 }
-#introduction {
+section p {
   width: 80%;
   height: auto;
   border: solid 3px #7a5c45;
@@ -115,7 +115,10 @@ section {
 .cardadd p {
   font-size: 16vh;
   width: 100%;
+  display: flex;
+  align-items: center;
   text-align: center;
+  background-color: #161b1c;
 }
 
 .card {
@@ -133,10 +136,6 @@ section {
 }
 .card h4 {
   color: #3f4e4f;
-}
-
-.card p {
-  border: solid 2px #7a5c45;
 }
 .card .icones {
   display: flex;
@@ -218,4 +217,4 @@ footer {
     max-height: 100px;
     top: 0;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
