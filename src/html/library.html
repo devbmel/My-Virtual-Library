@@ -81,10 +81,22 @@
 
         <section class="bibliotheque">
           <div class="cardadd">
-            <h3>Ajouter un livre</h3>
+            <h3>Ajouter un nouveau livre</h3>
 
-            <p>+</p>
+            <button id="openModalBtn">+</button>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span id="closeBtn" class="close">&times;</span>
+                <form id="formAddBook">
+                  <label for="addTittle">Titre du livre</label>
+                  <input type="text" id="addTittle" name="addTittle" required />
+
+                  <button id="btnAddBook" type="submit">Envoyer</button>
+                </form>
+              </div>
+            </div>
           </div>
+
           <article id="card1" class="card">
             <div class="icones">
               <img id="suppCard" src="/asset/images/annuler.png" alt="" />
