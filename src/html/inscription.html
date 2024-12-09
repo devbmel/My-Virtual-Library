@@ -39,7 +39,7 @@
 
     <main>
       <h1>S'inscrire</h1>
-      <div class="formulaire">
+      <div class="formDiv">
         <form action="../html/home-page-user.html">
           <div>
             <label for="username">Nom d'utilisateur :</label>
@@ -50,6 +50,8 @@
               pattern="[a-zA-ZÀ-ÿ]+"
               placeholder="Uniquement des caractères alphabétiques"
               required
+              aria-required="true"
+              aria-describedby="username-help"
             />
           </div>
           <div>
@@ -61,6 +63,7 @@
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               placeholder="something@exemple.com"
               required
+              aria-required="true"
               aria-describedby="emailHelp"
             />
           </div>
@@ -70,17 +73,21 @@
               type="password"
               id="password"
               name="password"
-              pattern="/^(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{8,}$/"
+              pattern="^(?=.*[A-Z])(?=.*[#?!@$%^&*-]).{8,}$"
               placeholder="Au moins une majuscule et un caractère spécial"
               required
+              aria-required="true"
+              aria-describedby="password-help"
             />
           </div>
           <div>
             <label for="confirmpassword">Confirmer le mot de passe :</label>
             <input
-              type="confirmpassword"
+              type="password"
               id="confirmpassword"
               name="confirmpassword"
+              required
+              aria-required="true"
             />
           </div>
 

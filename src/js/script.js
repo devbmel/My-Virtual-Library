@@ -1,55 +1,41 @@
-// const titreLivre = document.getElementById("titreLivre");
-// const auteurLivre = document.getElementById("auteur");
-// const genreLivre = document.getElementById("genreLivre");
-// const descriptionLivre = document.getElementById("description");
-// const couvertureLivre = document.createElement("img");
-// const supprimerCard = document.getElementById("suppCard");
-
-// const livre = bibliotheque.livre[3];
-
-// titreLivre.textContent = livre.Titre;
-// auteurLivre.textContent = livre.Auteur;
-// genreLivre.textContent = livre.Genre;
-// descriptionLivre.textContent = livre.Description;
-
-supprimerCard.addEventListener("click", () => {
-  document.getElementById("card1").remove;
-});
-
-// Récupérer les éléments nécessaires
-const modal = document.getElementById("modal");
 const openModalBtn = document.getElementById("openModalBtn");
 const closeBtn = document.getElementById("closeBtn");
+const btnAddBook = document.getElementById("btnAddBook");
+const formAddBook = document.getElementById("formAddBook");
 
 // Ouvrir la modale lorsqu'on clique sur le bouton
-openModalBtn.onclick = function () {
+openModalBtn.addEventListener("click", () => {
+  const modal = document.getElementById("modal");
   modal.style.display = "block";
-};
+});
 
 // Fermer la modale lorsqu'on clique sur le bouton "X"
-closeBtn.onclick = function () {
+closeBtn.addEventListener("click", () => {
+  const modal = document.getElementById("modal");
   modal.style.display = "none";
-};
+});
 
 // Fermer la modale si l'utilisateur clique en dehors de la fenêtre modale
-window.onclick = function (event) {
+window.addEventListener("click", (event) => {
+  const modal = document.getElementById("modal");
+
   if (event.target == modal) {
     modal.style.display = "none";
   }
-};
+});
 
-// Gérer l'envoi du formulaire
-document.getElementById("formAddBook").onsubmit = function (e) {
-  e.preventDefault();
-  alert("Formulaire envoyé !");
-  modal.style.display = "none"; // Fermer la modale après l'envoi
-};
+// Envoi du formulaire
+formAddBook.addEventListener("submit", (event) => {
+  event.preventDefault();
+  alert("Formulaire envoyé!");
+  modal.style.display = "none";
+});
 
 btnAddBook.addEventListener("click", () => {
-  const btnAddBook = document.getElementById("btnAddBook");
-  const inputAddTittle = document.getElementById("addTittle").value.trim();
+  const inputAddTitle = document.getElementById("addTitle");
+  inputAddTitle.value.trim();
   fetch(
-    `https://openlibrary.org/search.json?q=${inputAddTittle.replaceAll(
+    `https://openlibrary.org/search.json?q=${inputAddTitle.replaceAll(
       " ",
       "+"
     )}`

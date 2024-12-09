@@ -14,7 +14,7 @@ h1 {
   text-align: center;
 }
 
-.formulaire {
+.formDiv {
   background-color: #e2d6cc;
   padding: 30px;
   border-radius: 10px;
@@ -23,23 +23,23 @@ h1 {
   max-width: 500px;
 }
 
-.formulaire form {
+.formDiv form {
   display: flex;
   flex-direction: column;
 }
 
-.formulaire div {
+.formDiv div {
   margin-bottom: 20px;
 }
 
-.formulaire label {
+.formDiv label {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 5px;
   color: #2f3b3b;
 }
 
-.formulaire input {
+.formDiv input {
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #e2d6cc;
@@ -48,12 +48,12 @@ h1 {
   box-sizing: border-box;
 }
 
-.formulaire input:focus {
+.formDiv input:focus {
   border-color: #2f3b3b;
   outline: none;
 }
 
-.formulaire button {
+.formDiv button {
   padding: 10px;
   font-size: 1.1rem;
   background-color: #a27b5c;
@@ -64,14 +64,14 @@ h1 {
   font-weight: 700;
 }
 
-.formulaire button:hover {
+.formDiv button:hover {
   background-color: darken($button-bg-color, 10%);
 }
 
 //---------------Media Queries -----------------//
 
 @media (max-width: 768px) {
-  .formulaire {
+  .formDiv {
     padding: 15px;
     width: 100%;
     max-width: 100%;
@@ -82,23 +82,23 @@ h1 {
     font-size: 1.8rem;
   }
 
-  .formulaire input,
-  .formulaire button {
+  .formDiv input,
+  .formDiv button {
     font-size: 0.9rem;
     padding: 8px;
   }
 
-  .formulaire label {
+  .formDiv label {
     font-size: 0.85rem;
   }
 
-  .formulaire div {
+  .formDiv div {
     margin-bottom: 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .formulaire {
+  .formDiv {
     padding: 10px;
     width: 100%;
     max-width: 100%;
@@ -109,21 +109,17 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .formulaire input,
-  .formulaire button {
+  .formDiv input,
+  .formDiv button {
     font-size: 0.85rem;
     padding: 6px;
   }
 
-  .formulaire label {
+  .formDiv label {
     font-size: 0.8rem;
   }
 
-  .formulaire div {
+  .formDiv div {
     margin-bottom: 10px;
-  }
-
-  .formulaire button {
-    padding: 8px 0;
   }
 }
