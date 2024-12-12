@@ -31,7 +31,7 @@ header {
   top: -7px;
 }
 
-.menu {
+.nav {
   flex-grow: 1;
   ul {
     display: flex;
@@ -150,7 +150,7 @@ section {
     }
   }
 
-  .couverture {
+  .bookCover {
     height: 10em;
     width: 30em;
 
@@ -160,7 +160,7 @@ section {
     }
   }
 
-  .commentaire {
+  .comments {
     p {
       border: solid color #7a5c45;
       background-color: #e2d6cc;
@@ -200,15 +200,15 @@ footer {
     height: auto;
   }
 
-  .menu {
+  .nav {
     margin: 10px 0;
   }
 
-  .menu ul {
+  .nav ul {
     flex-direction: column;
     align-items: flex-start;
   }
-  .menu li {
+  .nav li {
     margin: 5px 0;
   }
 

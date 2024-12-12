@@ -28,18 +28,18 @@ header {
   top: -7px;
 }
 
-.menu {
+.nav {
   flex-grow: 1;
 }
-.menu ul {
+.nav ul {
   display: flex;
   list-style: none;
   justify-content: center;
 }
-.menu li {
+.nav li {
   margin: 0 15px;
 }
-.menu a {
+.nav a {
   text-decoration: none;
   color: #a27b5c;
   font-weight: bold;
@@ -148,15 +148,15 @@ section p {
 .card .wraph4 h4 {
   padding: 15px;
 }
-.card .couverture {
+.card .bookCover {
   height: 10em;
   width: 30em;
 }
-.card .couverture img {
+.card .bookCover img {
   max-height: 100%;
   width: auto;
 }
-.card .commentaire p {
+.card .comments p {
   border: solid color #7a5c45;
   background-color: #e2d6cc;
   color: #161b1c;
@@ -202,14 +202,14 @@ footer {
     padding-top: 60px;
     height: auto;
   }
-  .menu {
+  .nav {
     margin: 10px 0;
   }
-  .menu ul {
+  .nav ul {
     flex-direction: column;
     align-items: flex-start;
   }
-  .menu li {
+  .nav li {
     margin: 5px 0;
   }
   .logo {

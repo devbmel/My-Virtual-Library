@@ -16,12 +16,12 @@
   border-radius: 8px;
 }
 
-.imagefavoris {
+.imageFav {
   width: 8em;
   height: 8em;
   padding: 10px;
 }
-.imagefavoris img {
+.imageFav img {
   max-height: 100%;
   width: auto;
 }
@@ -51,12 +51,12 @@
     background-color: #e2d6cc;
     border-radius: 8px;
   }
-  .imagefavoris {
+  .imageFav {
     width: 7em;
     height: 7em;
     padding: 8px;
   }
-  .imagefavoris img {
+  .imageFav img {
     max-height: 100%;
     width: auto;
     border-radius: 8px;
@@ -86,7 +86,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .imagefavoris {
+  .imageFav {
     width: 5em;
     height: 5em;
     padding: 5px;

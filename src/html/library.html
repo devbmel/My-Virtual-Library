@@ -28,7 +28,7 @@
         alt="logo de my virtual
       library, une plume dans un livre"
       />
-      <nav class="menu">
+      <nav class="nav">
         <ul>
           <li><a href="/index.html">Accueil</a></li>
           <li><a href="library.html">Bibliothèque</a></li>
@@ -89,7 +89,7 @@
                 <span id="closeBtn" class="close">&times;</span>
                 <form id="formAddBook">
                   <label for="addTitle">Titre du livre</label>
-                  <input type="text" id="addTittle" name="addTittle" required />
+                  <input type="text" id="addTitle" name="addTittle" required />
 
                   <button id="btnAddBook" type="submit">Envoyer</button>
                 </form>
@@ -97,11 +97,15 @@
             </div>
           </div>
 
-          <article id="card1" class="card">
+          <!-- <article id="card1" class="card">
             <div class="icones">
               <img id="suppCard" src="/asset/images/annuler.png" alt="" />
 
-              <img src="/asset/images/ajouter-aux-favoris.png" alt="" />
+              <img
+                id="addFav"
+                src="/asset/images/ajouter-aux-favoris.png"
+                alt=""
+              />
             </div>
 
             <h3 id="titreLivre">Titre du livre</h3>
@@ -129,119 +133,9 @@
                 eius esse neque laboriosam, quo veritatis possimus sit magni
                 consequatur? Quaerat consequatur eaque fuga.
               </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="icones">
-              <img src="/asset/images/annuler.png" alt="" />
-
-              <img src="/asset/images/ajouter-aux-favoris.png" alt="" />
-            </div>
-
-            <h3>Titre du livre</h3>
-            <div class="wraph4">
-              <div class="couverture">
-                <img src="/asset/images/livre1.jpg" alt="couverture du livre" />
-              </div>
-              <div>
-                <h4>Auteur</h4>
-                <h4>Genre</h4>
-                <h4>Statut</h4>
-              </div>
-            </div>
-            <div class="note">
-              <img src="/asset/images/note.png" alt="" /><img
-                src="/asset/images/note.png"
-                alt=""
-              /><img src="/asset/images/note.png" alt="" /><img
-                src="/asset/images/note.png"
-                alt=""
-              /><img src="/asset/images/note.png" alt="" />
-            </div>
-            <div class="commentaire">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis doloribus illo eos adipisci excepturi tempore omnis
-                eius esse neque laboriosam, quo veritatis possimus sit magni
-                consequatur? Quaerat consequatur eaque fuga.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="icones">
-              <img src="/asset/images/annuler.png" alt="" />
-
-              <img src="/asset/images/ajouter-aux-favoris.png" alt="" />
-            </div>
-
-            <h3>Titre du livre</h3>
-            <div class="wraph4">
-              <div class="couverture">
-                <img src="/asset/images/livre1.jpg" alt="couverture du livre" />
-              </div>
-              <div>
-                <h4>Auteur</h4>
-                <h4>Genre</h4>
-                <h4>Statut</h4>
-              </div>
-            </div>
-            <div class="note">
-              <img src="/asset/images/note.png" alt="" /><img
-                src="/asset/images/note.png"
-                alt=""
-              /><img src="/asset/images/note.png" alt="" /><img
-                src="/asset/images/note.png"
-                alt=""
-              /><img src="/asset/images/note.png" alt="" />
-            </div>
-            <div class="commentaire">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis doloribus illo eos adipisci excepturi tempore omnis
-                eius esse neque laboriosam, quo veritatis possimus sit magni
-                consequatur? Quaerat consequatur eaque fuga.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="icones">
-              <img src="/asset/images/annuler.png" alt="" />
-
-              <img src="/asset/images/ajouter-aux-favoris.png" alt="" />
-            </div>
-
-            <h3>Titre du livre</h3>
-            <div class="wraph4">
-              <div class="couverture">
-                <img src="/asset/images/livre1.jpg" alt="couverture du livre" />
-              </div>
-              <div>
-                <h4>Auteur</h4>
-                <h4>Genre</h4>
-                <h4>Statut</h4>
-              </div>
-            </div>
-            <div class="note">
-              <img src="/asset/images/note.png" alt="" /><img
-                src="/asset/images/note.png"
-                alt=""
-              /><img src="/asset/images/note.png" alt="" /><img
-                src="/asset/images/note.png"
-                alt=""
-              /><img src="/asset/images/note.png" alt="" />
-            </div>
-            <div class="commentaire">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corporis doloribus illo eos adipisci excepturi tempore omnis
-                eius esse neque laboriosam, quo veritatis possimus sit magni
-                consequatur? Quaerat consequatur eaque fuga.
-              </p>
-            </div>
-          </article>
+            </div> -->
+          <div id="booksContainer"></div>
+          <!-- </article> -->
         </section>
       </div>
     </main>
