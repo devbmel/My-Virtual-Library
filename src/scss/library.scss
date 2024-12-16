@@ -20,7 +20,7 @@
   }
 }
 
-.bibliotheque {
+#bibliotheque {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
@@ -92,7 +92,7 @@ form input {
 }
 
 @media (max-width: 600px) {
-  .bibliotheque {
+  #bibliotheque {
     grid-template-columns: 1fr;
   }
 }

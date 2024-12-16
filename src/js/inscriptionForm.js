@@ -11,9 +11,12 @@ inscriptionForm.addEventListener("submit", (event) => {
   const username = document.getElementById("username").value.trim();
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value.trim();
-
+  c;
   if (email === "" || password === "") {
     alert("Tous les champs doivent être remplis.");
+    return;
+  } else if (username.length < 8) {
+    alert("Le nom d'utilisateur doit contenir au moins 8 caractères.");
     return;
   } else if (!emailRegex.test(email)) {
     alert("Veuillez renseigner un email valide");
