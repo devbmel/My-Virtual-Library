@@ -47,11 +47,10 @@
               type="text"
               id="username"
               name="username"
-              pattern="[a-zA-ZÀ-ÿ]+"
               placeholder="Au moins 6 caractères"
               required
               aria-required="true"
-              aria-describedby="username-help"
+              aria-describedby="champ pour username"
             />
           </div>
           <div>
@@ -60,11 +59,10 @@
               type="email"
               id="email"
               name="email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               placeholder="something@exemple.com"
               required
               aria-required="true"
-              aria-describedby="emailHelp"
+              aria-describedby="champ pour l'email"
             />
           </div>
           <div>
@@ -73,11 +71,10 @@
               type="password"
               id="password"
               name="password"
-              pattern="^(?=.*[A-Z])(?=.*[#?!@$%^&*-]).{8,}$"
               placeholder="Le mot de passe doit contenir au moins 6 caractères"
               required
               aria-required="true"
-              aria-describedby="password-help"
+              aria-describedby="champ pour le mot de passe"
             />
           </div>
           <div>
@@ -88,6 +85,7 @@
               name="confirmpassword"
               required
               aria-required="true"
+              aria-describedby="champ pour la confirmation du mot de passe"
             />
           </div>
 
