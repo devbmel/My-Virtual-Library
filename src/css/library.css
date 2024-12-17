@@ -24,8 +24,18 @@
   gap: 20px;
 }
 
-.note {
-  gap: 10px;
+#resultsList {
+  list-style: none;
+  padding: 0;
+}
+
+#resultsList li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#resultsList li:hover {
+  background-color: #f0f0f0;
 }
 
 /* Style pour la fenêtre modale (cachée par défaut) */

@@ -49,17 +49,14 @@ function getBookDetails(book) {
   const detailsDiv = document.createElement("div");
   const author = document.createElement("h4");
   const genre = document.createElement("h4");
-  const status = document.createElement("h4");
 
   genre.id = "genreLivre";
   author.id = "auteur";
   author.textContent = book.author;
   genre.textContent = book.genre;
-  status.textContent = "Statut";
 
   detailsDiv.appendChild(author);
   detailsDiv.appendChild(genre);
-  detailsDiv.appendChild(status);
 
   return detailsDiv;
 }
@@ -85,6 +82,48 @@ function displayBookCard(book) {
   booksSection.appendChild(card);
 }
 
+// deuxième modale
+function displayResultsModal(books) {
+  const resultsModal = document.createElement("div");
+  const modalContent = document.createElement("div");
+  const closeBtn = document.createElement("span");
+
+  resultsModal.id = "resultsModal";
+  resultsModal.className = "modal";
+  modalContent.className = "modal-content";
+  closeBtn.className = "close";
+
+  closeBtn.addEventListener("click", () => {
+    resultsModal.style.display = "none";
+    resultsModal.remove();
+  });
+
+  const resultsList = document.createElement("ul");
+  resultsList.id = "resultsList";
+
+  books.forEach((book, index) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `${book.title} - ${book.author}`;
+    listItem.addEventListener("click", () => {
+      displayBookCard(book);
+      localStorage.setItem("cardBook", JSON.stringify(book));
+      resultsModal.style.display = "none";
+      resultsModal.remove();
+    });
+
+    resultsList.appendChild(listItem);
+  });
+
+  modalContent.appendChild(closeBtn);
+  modalContent.appendChild(document.createElement("h2")).textContent =
+    "Sélectionnez un livre";
+  modalContent.appendChild(resultsList);
+  resultsModal.appendChild(modalContent);
+  document.body.appendChild(resultsModal);
+
+  resultsModal.style.display = "block";
+}
+
 async function main() {
   const openModalBtn = document.getElementById("openModalBtn");
   const closeBtn = document.getElementById("closeBtn");
@@ -103,7 +142,6 @@ async function main() {
 
   formAddBook.addEventListener("submit", (event) => {
     event.preventDefault();
-    alert("Formulaire envoyé!");
     modal.style.display = "none";
   });
 
@@ -118,15 +156,15 @@ async function main() {
 
     const data = await getBookDataByTitle(valueInput);
 
-    let booksStorage = data.slice(0, 10).map((book) => ({
+    let booksList = data.slice(0, 10).map((book) => ({
       title: book.title,
-      author: book.author_name,
+      author: book.author_name ? book.author_name[0] : "Auteur inconnu",
       cover: book.cover_i,
-      cover_img_url: `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg?default=true`, // image par défaut sans image
+      cover_img_url: `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg?default=true`,
       genre: "",
     }));
-    displayBookCard(booksStorage[0]);
-    localStorage.setItem("booksStorage", JSON.stringify(booksStorage));
+    // Affichage de la deuxième modale avec les résultats
+    displayResultsModal(booksList);
   });
 }
 

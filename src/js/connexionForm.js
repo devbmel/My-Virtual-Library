@@ -11,8 +11,8 @@ connexionForm.addEventListener("submit", (event) => {
     return;
   }
 
-  if (username.length < 8) {
-    alert("Le nom d'utilisateur doit contenir au moins 8 caractères.");
+  if (username.length < 6) {
+    alert("Le nom d'utilisateur doit contenir au moins 6 caractères.");
     return;
   }
 
