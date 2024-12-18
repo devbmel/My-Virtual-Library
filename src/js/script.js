@@ -1,5 +1,3 @@
-const btnAddBook = document.getElementById("btnAddBook");
-
 btnAddBook.addEventListener("click", async () => {
   const inputAddTitle = document.getElementById("addTitle");
   const valueInput = inputAddTitle.value.trim();
@@ -15,7 +13,7 @@ btnAddBook.addEventListener("click", async () => {
     title: book.title,
     author: book.author_name,
     cover: book.cover_i,
-    cover_img_url: `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg?default=true`,
+    cover_img_url: `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`,
   }));
 
   displayResultsModal(booksList);

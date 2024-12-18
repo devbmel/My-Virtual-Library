@@ -8,7 +8,14 @@ function getListBooksFromAPI(books, resultsModal) {
     listItem.textContent = `${book.title} - ${book.author}`;
     listItem.addEventListener("click", () => {
       displayBookCard(book);
-      localStorage.setItem("cardBook", JSON.stringify(book));
+
+      // Récupérer les données existantes ou initialiser une liste vide
+      let cardBook = JSON.parse(localStorage.getItem("cardBook") || "[]");
+
+      cardBook.push(book);
+
+      localStorage.setItem("cardBook", JSON.stringify(cardBook));
+
       resultsModal.style.display = "none";
       resultsModal.remove();
     });
